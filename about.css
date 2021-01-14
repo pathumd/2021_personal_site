@@ -1,0 +1,1480 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+/*Fonts for Website */
+
+@font-face {
+
+    font-family: 'Blender Pro';
+    src: url(fonts/BlenderPro-Bold.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+
+    font-family: 'Blender Pro';
+    src: url(fonts/BlenderPro-Book.ttf);
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+
+body {
+
+    font-family: Blender Pro;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*Navigation */
+
+
+nav {
+    
+    padding-top: 35px;
+    text-align: center;
+    
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+nav ul li:last-child {
+    margin-right: 24px;
+}
+
+nav ul li a {
+    display: inline-block;
+    outline: none;
+    color: #919191;
+    font-family: Blender Pro;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+}
+
+nav ul li a:hover {
+
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 864px) {
+
+
+    .nav-wrapper {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: #FCEE09;
+          opacity: 0;
+          transition: all 0.2s ease;
+    }
+
+    .nav-wrapper ul {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+    }
+
+    .nav-wrapper ul li {
+          display: block;
+          float: none;
+          width: 100%;
+          text-align: right;
+          margin-bottom: 10px;
+    }
+
+    .nav-wrapper ul li:nth-child(1) a {
+          transition-delay: 0.2s;
+    }
+
+    .nav-wrapper ul li:nth-child(2) a {
+          transition-delay: 0.3s;
+    }
+
+    .nav-wrapper ul li:nth-child(3) a {
+          transition-delay: 0.4s;
+    }
+
+    .nav-wrapper ul li:nth-child(4) a {
+          transition-delay: 0.5s;
+    }
+
+    .nav-wrapper ul li:not(:first-child) {
+          margin-left: 0;
+    }
+
+    .nav-wrapper ul li a {
+          padding: 20px 24px;
+          opacity: 0;
+          color: #020106;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-family: Blender Pro;
+          font-weight: 200;
+          letter-spacing: 1.2px;
+          transform: translateX(-20px);
+          transition: all 0.2s ease;
+    }
+
+    .nav-btn {
+          position: fixed;
+          right: 10px;
+          top: 10px;
+          display: block;
+          width: 48px;
+          height: 48px;
+          cursor: pointer;
+          z-index: 9999;
+          border-radius: 50%;
+    }
+
+    .nav-btn i {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #ffffff;
+          border-radius: 2px;
+          margin-left: 14px;
+    }
+
+    .nav-btn i:nth-child(1) {
+          margin-top: 16px;
+    }
+
+    .nav-btn i:nth-child(2) {
+          margin-top: 4px;
+          opacity: 1;
+    }
+
+    .nav-btn i:nth-child(3) {
+          margin-top: 4px;
+    }
+}
+
+#nav:checked + .nav-btn {
+    transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked + .nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Headers */
+
+.header h1 {
+
+    position: absolute;
+    top: 200px;
+    left: 280px;
+    font-family: Blender Pro;
+    color: #FCEE09;
+    font-size: 70px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+}
+
+.underline img {
+
+    position: absolute;
+    top: 300px;
+    left: 282px;
+
+}
+
+
+/*Social Media Icons */
+
+.social_box {
+
+    position: absolute;
+    left: 88px;
+    top: 780px;
+    padding-bottom: 150px;
+}
+
+.github img {
+
+    position: absolute;
+    top: 800px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.youtube img {
+
+    position: absolute;
+    top: 845px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.instagram img {
+
+    position: absolute;
+    top: 890px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.linkedin img {
+
+    position: absolute;
+    top: 935px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+
+.icons_container {
+
+    position: absolute;
+    top: 16px;
+    left: 2px;
+}
+
+.social_container {
+
+    position: absolute;
+    top: -60px;
+    left: -20px;
+    padding-bottom: 50px;
+}
+
+/* Intro */
+
+.intro h2 {
+
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.intro {
+
+    position: absolute;
+    top: 375px;
+    left: 282px;
+}
+
+
+.intro2 h2 {
+
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 22px;
+
+}
+
+.intro2 {
+
+    position: absolute;
+    left: 282px;
+    top: 412px;
+}
+/* Skills Cards */
+
+.languages h2 {
+
+    color: #FCEE09;
+    font-weight: 100;
+    font-size: 22px;
+    text-transform: uppercase;
+
+}
+
+.languages {
+
+    position: absolute;
+    left: 282px;
+    top: 430px;
+}
+
+.python img {
+
+    display: flex;
+    position: absolute;
+    left: 202px;
+    top: 460px;
+    transition: .5s;
+}
+
+.python img:hover {
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.javascript img {
+
+    display: flex;
+    position: absolute;
+    left: 442px;
+    top: 460px;
+    transition: .5s;
+}
+
+.javascript img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+.html img {
+
+    display: flex;
+    position: absolute;
+    left: 682px;
+    top: 460px;
+    transition: .5s;
+}
+
+
+.html img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.software h2 {
+
+    color: #FCEE09;
+    font-weight: 100;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.software {
+
+    position: absolute;
+    left: 282px;
+    top: 840px;
+}
+
+.xd img {
+
+    display: flex;
+    position: absolute;
+    left: 202px;
+    top: 870px;
+    transition: .5s;
+}
+
+.xd img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.illustrator img {
+
+    display: flex;
+    position: absolute;
+    left: 442px;
+    top: 870px;
+    transition: .5s;
+
+}
+
+.illustrator img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+.photoshop img {
+
+    display: flex;
+    position: absolute;
+    left: 682px;
+    top: 870px;
+    transition: .5s;
+}
+
+.photoshop img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.premiere_pro img {
+
+    display: flex;
+    position: absolute;
+    left: 922px;
+    top: 870px;
+    transition: .5s;
+}
+
+.premiere_pro img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.after_effects img {
+
+    display: flex;
+    position: absolute;
+    left: 202px;
+    top: 1120px;
+    transition: .5s;
+}
+
+.after_effects img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.fl_studio img {
+
+    display: flex;
+    position: absolute;
+    left: 442px;
+    top: 1120px;
+    transition: .5s;
+
+}
+
+.fl_studio img:hover {
+
+    transform: scale(1.02);
+    opacity: .8;
+    transition: .9s;
+}
+
+.entire_container {
+    position: relative;
+    top: 70px;
+}
+
+/*Proficiencies Decal */
+
+.decal img {
+
+    position: absolute;
+    left: 1590px;
+    top: -350px;
+
+}
+
+
+.footer h2 {
+    position: relative;
+    text-align: center;
+    color: #919191;
+    top: 50px;
+    font-weight: 100;
+    font-size: 15px;
+    top: 1500px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+/* Optimization */
+
+@media only screen and (min-width: 360px) and (max-width: 765px) {
+
+
+.decal img {
+
+    position: absolute;
+    left: -18px;
+    transform: scale(0.6);
+    top: -700px;
+   }
+
+   .header h1 {
+
+    font-size: 50px;
+   }
+
+   .header {
+
+    position: absolute;
+    left: -90px;
+    top: 55px;
+   }
+
+   .underline img {
+
+    position: absolute;
+    top: 320px;
+    left: 178px;
+    transform: scale(0.8);
+   }
+
+   .intro h2 {
+
+    font-size: 15px;
+   }
+
+   .intro {
+
+    position: absolute;
+    left: 186px;
+   }
+
+   .intro2 h2 {
+
+    font-size: 15px;
+   }
+
+   .intro2 {
+
+    position: absolute;
+    left: 186px;
+    top: 404px;
+   }
+
+
+   .languages h2 {
+
+    font-size: 15px;
+   }
+
+   .languages {
+
+    position: absolute;
+    left: 180px;
+   }
+
+   .social_container {
+
+    transform: scale(0.8);
+    left: -22px;
+    top: -180px;
+   }
+
+
+
+
+   .python img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 88px;
+    top: 380px;
+    transition: .9s;
+   }
+
+   .python img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+   .javascript img {
+
+    position: absolute;
+    transform: scale(0.8);
+    top: 380px;
+    left: 256px;
+    transition: .9s;
+   }
+
+   .javascript img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+   .html img {
+
+    position: absolute;
+    transform: scale(0.8);
+    top: 380px;
+    left: 424px;
+    transition: .9s;
+   }
+
+   .html img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .software h2 {
+
+    font-size: 15px;
+
+   }
+
+   .software {
+
+    position: absolute;
+    top: 750px;
+    left: 180px;
+   }
+   .xd img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 88px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .xd img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .illustrator img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 256px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .illustrator img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .photoshop img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 424px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .photoshop img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .premiere_pro img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 88px;
+    top: 874px;
+    transition: .9s;
+   }
+
+   .premiere_pro img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .after_effects img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 256px;
+    top: 874px;
+    transition: .9s;
+   }
+
+   .after_effects img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .fl_studio img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 424px;
+    top: 874px;
+    transition: .9s;
+   }
+
+   .fl_studio img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+
+    .footer {
+    position: relative;
+    top: -350px;
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+
+
+    .decal img {
+
+        position: absolute;
+        transform: scale(0.5);
+        top: -700px;
+        left: -35px;
+    }
+
+    .social_container {
+
+        transform: scale(0.7);
+        left: -25px;
+    }
+
+    .underline {
+    
+        position: absolute;
+        transform: scale(0.7);
+        left: 12px;
+        top: 85px;
+    }
+
+    .header h1 {
+
+        font-size: 40px;
+    }
+
+    .header {
+
+        left: -135px;
+    }
+
+    .intro h2 {
+
+        position: relative;
+        left: -40px;
+        top: -8px;
+        overflow-wrap: break-word;
+    }
+
+    .intro2 h2 {
+
+        position: relative;
+        left: -40px;
+        top: 20px;
+    }
+
+    .languages {
+        position: absolute;
+        top: 414px;
+        left: 145px;
+    }
+
+    .python img {
+
+        position: absolute;
+        left: 50px;
+        transition: .9s;
+    }
+
+    .python img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .javascript img {
+
+        position: absolute;
+        left: 50px;
+        transition: .9s;
+        top: 560px;
+    }
+
+    .javascript img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .html img {
+
+        position: absolute;
+        left: 50px;
+        top: 740px;
+    }
+
+    .html img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+
+    .software {
+
+        position: absolute;
+        top: 1050px;
+        left: 145px;
+    }
+
+    .xd img {
+
+        position: absolute;
+        left: 50px;
+        top: 1020px;
+    }
+
+    .xd img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .illustrator img {
+
+
+        position: absolute;
+        left: 50px;
+        top: 1200px;
+    }
+
+    .illustrator img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .photoshop img {
+
+        position: absolute;
+        left: 50px;
+        top: 1380px;
+    }
+
+    .photoshop img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .premiere_pro img {
+
+        position: absolute;
+        left: 50px;
+        top: 1560px;
+        
+    }
+
+    .premiere_pro img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .after_effects img {
+
+        position: absolute;
+        left: 50px;
+        top: 1740px;
+    }
+
+    .after_effects img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .fl_studio img {
+
+        position: absolute;
+        left: 50px;
+        top: 1920px;
+    }
+
+    .fl_studio img:hover {
+
+        transform: scale(0.82);
+        opacity: .8;
+        transition: .9s;
+    }
+
+    .footer {
+        position: relative;
+        top: 680px;
+        }
+    
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+   .decal img {
+
+    position: absolute;
+    left: 730px;
+    transform: scale(0.6);
+    top: -700px;
+   }
+
+   .header h1 {
+
+    font-size: 50px;
+   }
+
+   .header {
+
+    position: absolute;
+    left: -88px;
+   }
+
+   .underline img {
+
+    position: absolute;
+    top: 320px;
+    left: 180px;
+    transform: scale(0.8);
+   }
+
+   .intro h2 {
+
+    font-size: 16px;
+   }
+
+   .intro {
+
+    position: absolute;
+    left: 190px;
+   }
+
+   .intro2 h2 {
+
+    font-size: 16px;
+   }
+
+   .intro2 {
+
+    position: absolute;
+    left: 190px;
+    top: 404px;
+   }
+
+
+   .languages h2 {
+
+    font-size: 16px;
+   }
+
+   .languages {
+
+    position: absolute;
+    left: 180px;
+   }
+
+   .social_container {
+
+    transform: scale(0.6);
+    left: 5px;
+   }
+
+
+
+
+   .python img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 88px;
+    top: 380px;
+    transition: .9s;
+   }
+
+   .python img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+   .javascript img {
+
+    position: absolute;
+    transform: scale(0.8);
+    top: 380px;
+    left: 256px;
+    transition: .9s;
+   }
+
+   .javascript img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+   .html img {
+
+    position: absolute;
+    transform: scale(0.8);
+    top: 380px;
+    left: 424px;
+    transition: .9s;
+   }
+
+   .html img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .software h2 {
+
+    font-size: 16px;
+
+   }
+
+   .software {
+
+    position: absolute;
+    top: 750px;
+    left: 180px;
+   }
+   .xd img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 88px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .xd img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .illustrator img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 256px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .illustrator img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .photoshop img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 424px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .photoshop img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .premiere_pro img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 592px;
+    top: 700px;
+    transition: .9s;
+   }
+
+   .premiere_pro img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .after_effects img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 88px;
+    top: 874px;
+    transition: .9s;
+   }
+
+   .after_effects img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .fl_studio img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 256px;
+    top: 874px;
+    transition: .9s;
+   }
+
+   .fl_studio img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+
+    .footer {
+    position: relative;
+    top: -350px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+
+.decal img {
+
+    position: absolute;
+    left: 995px;
+    transform: scale(0.7);
+    top: -500px;
+   }
+
+   .header h1 {
+
+    font-size: 60px;
+   }
+
+   .header {
+
+    position: absolute;
+    left: -88px;
+   }
+
+   .underline img {
+
+    position: absolute;
+    top: 330px;
+    left: 185px;
+    transform: scale(0.9);
+   }
+
+   .intro h2 {
+
+    font-size: 18px;
+   }
+
+   .intro {
+
+    position: absolute;
+    left: 190px;
+   }
+
+   .intro2 h2 {
+
+    font-size: 18px;
+   }
+
+   .intro2 {
+
+    position: absolute;
+    left: 190px;
+    top: 404px;
+   }
+
+
+   .languages h2 {
+
+    font-size: 18px;
+   }
+
+   .languages {
+
+    position: absolute;
+    left: 192px;
+   }
+
+   .social_container {
+
+    transform: scale(0.8);
+    left: -20px;
+    top: -150px;
+   }
+
+
+   .python img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 100px;
+    top: 400px;
+    transition: .9s;
+   }
+
+   .python img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+   .javascript img {
+
+    position: absolute;
+    transform: scale(0.8);
+    top: 400px;
+    left: 268px;
+    transition: .9s;
+   }
+
+   .javascript img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+
+   .html img {
+
+    position: absolute;
+    transform: scale(0.8);
+    top: 400px;
+    left: 436px;
+    transition: .9s;
+   }
+
+   .html img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .software h2 {
+
+    font-size: 18px;
+
+   }
+
+   .software {
+
+    position: absolute;
+    top: 750px;
+    left: 192px;
+   }
+   .xd img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 100px;
+    top: 720px;
+    transition: .9s;
+   }
+
+   .xd img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .illustrator img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 268px;
+    top: 720px;
+    transition: .9s;
+   }
+
+   .illustrator img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .photoshop img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 436px;
+    top: 720px;
+    transition: .9s;
+   }
+
+   .photoshop img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .premiere_pro img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 604px;
+    top: 720px;
+    transition: .9s;
+   }
+
+   .premiere_pro img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .after_effects img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 100px;
+    top: 894px;
+    transition: .9s;
+   }
+
+   .after_effects img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+   .fl_studio img {
+
+    position: absolute;
+    transform: scale(0.8);
+    left: 268px;
+    top: 894px;
+    transition: .9s;
+   }
+
+   .fl_studio img:hover {
+    transform: scale(0.85);
+    opacity: .8;
+    transition: .9s;
+}
+
+    .footer {
+        position: relative;
+        top: -300px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1370px) and (max-width: 1630px) {
+
+
+    .decal {
+
+        position: absolute;
+        left: -300px;
+        top: -100px;
+    }
+}

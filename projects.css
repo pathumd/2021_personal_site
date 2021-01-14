@@ -1,0 +1,1348 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+/*Fonts for Website */
+
+@font-face {
+
+    font-family: 'Blender Pro';
+    src: url(fonts/BlenderPro-Bold.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+
+    font-family: 'Blender Pro';
+    src: url(fonts/BlenderPro-Book.ttf);
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+
+body {
+
+    font-family: Blender Pro;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*Navigation */
+
+
+nav {
+    
+    padding-top: 35px;
+    text-align: center;
+    
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+nav ul li:last-child {
+    margin-right: 24px;
+}
+
+nav ul li a {
+    display: inline-block;
+    outline: none;
+    color: #919191;
+    font-family: Blender Pro;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+}
+
+nav ul li a:hover {
+
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 864px) {
+
+
+    .nav-wrapper {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: #FCEE09;
+          opacity: 0;
+          transition: all 0.2s ease;
+    }
+
+    .nav-wrapper ul {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+    }
+
+    .nav-wrapper ul li {
+          display: block;
+          float: none;
+          width: 100%;
+          text-align: right;
+          margin-bottom: 10px;
+    }
+
+    .nav-wrapper ul li:nth-child(1) a {
+          transition-delay: 0.2s;
+    }
+
+    .nav-wrapper ul li:nth-child(2) a {
+          transition-delay: 0.3s;
+    }
+
+    .nav-wrapper ul li:nth-child(3) a {
+          transition-delay: 0.4s;
+    }
+
+    .nav-wrapper ul li:nth-child(4) a {
+          transition-delay: 0.5s;
+    }
+
+    .nav-wrapper ul li:not(:first-child) {
+          margin-left: 0;
+    }
+
+    .nav-wrapper ul li a {
+          padding: 20px 24px;
+          opacity: 0;
+          color: #020106;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-family: Blender Pro;
+          font-weight: 200;
+          letter-spacing: 1.2px;
+          transform: translateX(-20px);
+          transition: all 0.2s ease;
+    }
+
+    .nav-btn {
+          position: fixed;
+          right: 10px;
+          top: 10px;
+          display: block;
+          width: 48px;
+          height: 48px;
+          cursor: pointer;
+          z-index: 9999;
+          border-radius: 50%;
+    }
+
+    .nav-btn i {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #ffffff;
+          border-radius: 2px;
+          margin-left: 14px;
+    }
+
+    .nav-btn i:nth-child(1) {
+          margin-top: 16px;
+    }
+
+    .nav-btn i:nth-child(2) {
+          margin-top: 4px;
+          opacity: 1;
+    }
+
+    .nav-btn i:nth-child(3) {
+          margin-top: 4px;
+    }
+}
+
+#nav:checked + .nav-btn {
+    transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked + .nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Headers */
+
+.header h1 {
+
+    position: absolute;
+    top: 200px;
+    left: 280px;
+    font-family: Blender Pro;
+    color: #FCEE09;
+    font-size: 70px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+}
+
+.underline img {
+
+    position: absolute;
+    top: 300px;
+    left: 282px;
+
+}
+
+/*Decal */
+
+.decal img {
+
+    position: absolute;
+    left: 1615px;
+    top: -350px;
+
+}
+
+/*Social Media Icons */
+
+.social_box {
+
+    position: absolute;
+    left: 88px;
+    top: 780px;
+    padding-bottom: 150px;
+}
+
+.github img {
+
+    position: absolute;
+    top: 800px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.youtube img {
+
+    position: absolute;
+    top: 845px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.instagram img {
+
+    position: absolute;
+    top: 890px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+.linkedin img {
+
+    position: absolute;
+    top: 935px;
+    left: 125px;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+
+.icons_container {
+
+    position: absolute;
+    top: 16px;
+    left: 2px;
+}
+
+.social_container {
+
+    position: absolute;
+    top: -60px;
+    left: -20px;
+    padding-bottom: 50px;
+}
+
+
+
+.responsive {
+
+    max-width: 100%;
+    height: auto;
+}
+
+.project1 img {
+    position: relative;
+    opacity: 0.5;
+    top: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.project1 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 345px;
+}
+
+
+.project2 img {
+
+    position: relative;
+    opacity: .5;
+    top: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.project2 img:hover {
+
+    transition: .5s;
+    animation-timing-function: linear;
+    opacity: 1;
+    top: 445px;
+}
+
+
+.project3 img {
+
+    position: relative;
+    opacity: .5;
+    top: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.project3 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 545px;
+}
+
+.project4 img {
+
+    position: relative;
+    opacity: .5;
+    top: 650px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.project4 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 645px;
+}
+
+
+.project5 img {
+
+    position: relative;
+    opacity: .5;
+    top: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.project5 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 745px;
+}
+
+
+.project6 img {
+
+    position: relative;
+    opacity: .5;
+    top: 850px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.project6 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 845px;
+}
+
+
+.project7 img {
+
+    position: relative;
+    opacity: .5;
+    top: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.project7 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 945px;
+}
+
+
+.project8 img {
+
+    position: relative;
+    opacity: .5;
+    top: 1050px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.project8 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 1045px;
+}
+
+/*Back to Top */
+
+.conclusion h1 {
+
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #FCEE09;
+    font-size: 70px;
+    position: absolute;
+    left: 280px;
+    top: 6700px;
+}
+
+.conclusion h2 {
+
+    font-weight: 100;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    left: 280px;
+    top: 6815px;
+}
+
+.button_container {
+
+    position: relative;
+    left: 280px;
+    top: 1555px;
+    
+}
+
+button,button::after{
+    width: 190px;
+    height:64px;
+    font-size: 19px;
+    text-align: center;
+    margin: auto;
+    font-family: Blender Pro;
+    font-weight:100;
+    background:linear-gradient(45deg,transparent 5%,#FD3649 5%);
+    border:0;
+    color:#fff;
+    letter-spacing:3px;
+    box-shadow:6px 0 0 #00E6F6;
+    position:relative;
+    cursor: pointer;
+    behavior: smooth;
+  
+  }
+   
+button::after{
+     --slice-0:inset(50% 50% 50% 50%);
+    --slice-1:inset(80% -6px 0 0);
+    --slice-2:inset(50% -6px 30% 0);
+    --slice-3:inset(10% -6px 85% 0);
+    --slice-4:inset(40% -6px 43% 0);
+    --slice-5:inset(80% -6px 5% 0);
+    content:'RESUME_';
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    background:linear-gradient(45deg,transparent 3%,#00E6F6 3%,#00E6F6 5%,#FD3649 3%);
+    text-shadow: -3px -3px 0 #F8F005 , 3px 3px 0 #00E6F6;
+    clip-path:var(--slice-0);
+  }
+  button:hover::after{
+    animation: glitch 1s;
+    animation-timing-function:steps(2,end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+
+/*Footer */
+
+
+.footer h2 {
+    position: relative;
+    text-align: center;
+    color: #919191;
+    top: 50px;
+    font-weight: 100;
+    font-size: 15px;
+    top: 1850px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+/*Optimization*/
+
+@media only screen and (max-width: 480px) {
+
+    .decal img {
+        transform: scale(0.5) !important;
+        position: absolute;
+        left: -48px !important;
+        top: -450px;
+    }
+    
+    .social_container {
+    
+        transform: scale(0.6) !important;
+        top: -200px !important;
+        left: -25px;
+    }
+    .header {
+        position: absolute;
+        top: 0px !important;
+        left: -160px !important;
+    }
+    .header h1 {
+
+        font-size: 30px !important;
+    }
+
+    .underline img {
+
+        position: absolute !important;
+        top: 245px !important;
+        left: 105px !important;
+        transform: scale(0.7) !important;
+    }
+    
+    .project1 img {
+    
+        transform: scale(0.8);
+    }
+    
+    .project2 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    
+    }
+    
+    .project2 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project3 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    
+    .project3 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project4 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project4 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project5 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project5 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project6 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project6 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project7 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project7 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project8 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project8 img:hover {
+    
+        top: 335px;
+    }
+    
+    .conclusion h1 {
+        position: absolute;
+        top: 2300px !important;
+        left: 110px !important;
+        font-size: 30px !important;
+    }
+    
+    .conclusion h2 {
+        position: absolute;
+        top: 2365px !important;
+        left: 112px !important;
+        font-size: 16px !important;
+    }
+    
+    .button_container {
+        position: absolute;
+        top: 2410px !important;
+        transform: scale(0.7) !important;
+        left: 84px !important;
+        top: 2416px !important;
+    }
+    
+    .footer {
+        position: relative;
+        top: -1000px !important;
+    }
+
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 765px) {
+
+    
+    .decal img {
+        transform: scale(0.7);
+        position: absolute;
+        left: 400px;
+        top: -450px;
+    }
+    
+    .social_container {
+    
+        transform: scale(0.7);
+        top: -260px;
+        left: -25px;
+    }
+    .header {
+        position: absolute;
+        top: 18px;
+        left: -110px;
+    }
+    .header h1 {
+
+        font-size: 45px;
+    }
+
+    .underline img {
+
+        position: absolute;
+        top: 280px;
+        left: 172px;
+    }
+    
+    .project1 img {
+    
+        transform: scale(0.8);
+    }
+    
+    .project2 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    
+    }
+    
+    .project2 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project3 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    
+    .project3 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project4 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project4 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project5 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project5 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project6 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project6 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project7 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project7 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project8 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project8 img:hover {
+    
+        top: 335px;
+    }
+    
+    .conclusion h1 {
+        position: absolute;
+        top: 3280px;
+        left: 180px;
+        font-size: 45px;
+    }
+    
+    .conclusion h2 {
+        position: absolute;
+        top: 3360px;
+        left: 180px;
+        font-size: 20px;
+    }
+    
+    .button_container {
+        position: absolute;
+        top: 670px;
+        transform: scale(0.8);
+        left: 162px;
+        top: 3422px;
+    }
+    
+    .footer {
+        position: relative;
+        top: -900px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .decal img {
+        transform: scale(0.8);
+        position: absolute;
+        left: 800px;
+        top: -450px;
+    }
+    
+    .social_container {
+    
+        transform: scale(0.8);
+        top: -260px;
+        left: -25px;
+    }
+    .header {
+        position: absolute;
+        top: 38px;
+    }
+    .header h1 {
+
+        font-size: 45px;
+    }
+    
+    .project1 img {
+    
+        transform: scale(0.8);
+    }
+    
+    .project2 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    
+    }
+    
+    .project2 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project3 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    
+    .project3 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project4 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project4 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project5 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project5 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project6 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project6 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project7 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project7 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project8 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project8 img:hover {
+    
+        top: 335px;
+    }
+    
+    .conclusion h1 {
+        position: absolute;
+        top: 4740px;
+        font-size: 45px;
+    }
+    
+    .conclusion h2 {
+        position: absolute;
+        top: 4825px;
+        font-size: 20px;
+    }
+    
+    .button_container {
+        position: absolute;
+        top: 4890px;
+        transform: scale(0.8);
+        left: 260px;
+    }
+    
+    .footer {
+        position: relative;
+        top: -800px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+
+    .decal img {
+        transform: scale(0.8);
+        position: absolute;
+        left: 1020px;
+        top: -420px;
+    }
+    
+    .social_container {
+    
+        transform: scale(0.9);
+        top: -300px;
+        left: -40px;
+    }
+    .header {
+        position: absolute;
+        top: 25px;
+    }
+    .header h1 {
+    
+        font-size: 55px;
+    }
+    
+    .project1 img {
+    
+        transform: scale(0.8);
+    }
+    
+    .project2 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    
+    }
+    
+    .project2 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project3 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    
+    .project3 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project4 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project4 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project5 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project5 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project6 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project6 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project7 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project7 img:hover {
+    
+        top: 335px;
+    }
+    
+    .project8 img {
+    
+        transform: scale(0.8);
+        top: 340px;
+    }
+    
+    .project8 img:hover {
+    
+        top: 335px;
+    }
+    
+    .conclusion h1 {
+        position: absolute;
+        top: 5785px;
+        font-size: 55px;
+    }
+    
+    .conclusion h2 {
+        position: absolute;
+        top: 5890px;
+        font-size: 20px;
+    }
+    
+    .button_container {
+        position: absolute;
+        top: 5970px;
+        transform: scale(0.9);
+        left: 272px;
+    }
+    
+    .footer {
+        position: relative;
+        top: -800px;
+    }
+
+}
+
+@media only screen and (min-width: 1370px) and (max-width: 1630px) {
+
+.decal img {
+    transform: scale(0.9);
+    position: absolute;
+    left: 1150px;
+    top: -420px;
+}
+
+.social_container {
+
+    transform: scale(0.9);
+    top: -260px;
+    left: -25px;
+}
+.header {
+    position: absolute;
+    top: 25px;
+}
+.header h1 {
+
+    font-size: 55px;
+}
+
+.project1 img {
+
+    transform: scale(0.8);
+}
+
+.project2 img {
+
+    transform: scale(0.8);
+    top: 340px;
+
+}
+
+.project2 img:hover {
+
+    top: 335px;
+}
+
+.project3 img {
+
+    transform: scale(0.8);
+    top: 340px;
+}
+
+
+.project3 img:hover {
+
+    top: 335px;
+}
+
+.project4 img {
+
+    transform: scale(0.8);
+    top: 340px;
+}
+
+.project4 img:hover {
+
+    top: 335px;
+}
+
+.project5 img {
+
+    transform: scale(0.8);
+    top: 340px;
+}
+
+.project5 img:hover {
+
+    top: 335px;
+}
+
+.project6 img {
+
+    transform: scale(0.8);
+    top: 340px;
+}
+
+.project6 img:hover {
+
+    top: 335px;
+}
+
+.project7 img {
+
+    transform: scale(0.8);
+    top: 340px;
+}
+
+.project7 img:hover {
+
+    top: 335px;
+}
+
+.project8 img {
+
+    transform: scale(0.8);
+    top: 340px;
+}
+
+.project8 img:hover {
+
+    top: 335px;
+}
+
+.conclusion h1 {
+
+    position: absolute;
+    top: 5850px;
+    font-size: 55px;
+}
+
+.conclusion h2 {
+
+    position: absolute;
+    top: 5950px;
+    font-size: 20px;
+}
+
+.button_container {
+
+    position: absolute;
+    top: 6030px;
+    transform: scale(0.9);
+    left: 270px;
+}
+
+.footer {
+    position: relative;
+    top: -800px;
+}
+
+}
