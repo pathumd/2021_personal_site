@@ -786,7 +786,7 @@ nav ul li a:hover {
     .text_header {
 
         left: 185px;
-        top: 360px;
+        top: 340px;
     }
 
 
@@ -796,7 +796,7 @@ nav ul li a:hover {
     }
     .tagline {
         position: relative;
-        top: -150px;
+        top: -170px;
         left: -95px;
     }
 
@@ -804,7 +804,7 @@ nav ul li a:hover {
 
         position: absolute;
         left: 110px;
-        top: 545px;
+        top: 525px;
         padding-left: 80px;
     
     }
@@ -830,11 +830,9 @@ nav ul li a:hover {
 
 
     .social_container {
-
-        transform: scale(0.8);
         position: relative;
-        top: -10px;
-        left: -142px;
+        top: -255px;
+        left: -42px;
         padding-left: -30px;
     }
 
@@ -898,8 +896,8 @@ nav ul li a:hover {
 
     .footer {
 
-        position: relative;
-        top: -50px;
+      position: relative;
+      top: 10px;
     }
 
 
