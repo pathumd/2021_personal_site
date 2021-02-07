@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-shadow: border-box;
-    cursor: url(cursors/CP_Move.cur), default;
 }
 
 html {
@@ -42,6 +41,38 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+
+
+
+
+/* Hyperlinks */
+
+.footer a:link {
+  color: #202020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer a:visited {
+  color: #202020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #202020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer a:active {
+  color: #202020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
 
 
 /*Main Landing Page Text */
@@ -153,11 +184,11 @@ body {
     top: 560px;
 }
 
-.decal img {
+.decal {
 
     position: absolute;
-    left: 8px;
-    top: -50px;
+    left: 52px;
+    top: -30px;
 }
 
 
@@ -541,9 +572,9 @@ nav ul li a:hover {
     .decal img {
 
         position: absolute;
-        left: -45px !important;
-        top: -140px;
-        transform: scale(0.5) !important;
+        left: -75px !important;
+        top: -70px !important;
+        transform: scale(0.4) !important;
 
     }
 
@@ -624,11 +655,11 @@ nav ul li a:hover {
 @media only screen and (min-width: 360px) and (max-width: 765px) {
 
 
-    .decal img {
+    .decal {
 
         position: absolute;
-        left: -15px;
-        top: -140px;
+        left: -5px;
+        top: -100px;
         transform: scale(0.7);
 
     }
@@ -702,12 +733,13 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .decal img {
+    .decal {
 
         position: absolute;
-        left: -15px;
-        top: -140px;
-        transform: scale(0.8);
+        left: 5px;
+        top: -30px;
+        transform: scale(0.7);
+
     }
 
     .text_header h1 {
@@ -770,11 +802,11 @@ nav ul li a:hover {
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
 
 
-    .decal img {
+    .decal {
 
         position: absolute;
-        left: -15px;
-        top: -140px;
+        left: 25px;
+        top: -55px;
         transform: scale(0.8);
     }
 
@@ -914,11 +946,11 @@ nav ul li a:hover {
         font-size: 90px;
     }
 
-    .decal img {
+    .decal {
 
         position: absolute;
-        left: -15px;
-        top: -140px;
+        left: 52px;
+        top: -40px;
     }
 
 }

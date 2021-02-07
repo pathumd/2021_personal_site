@@ -222,6 +222,34 @@ nav ul li a:hover {
 
 
 
+/* Hyperlinks */
+
+.footer a:link {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer a:visited {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer a:hover {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer a:active {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+
 /* Headers */
 
 .header h1 {
@@ -250,8 +278,8 @@ nav ul li a:hover {
 .decal img {
 
     position: absolute;
-    left: 1615px;
-    top: -350px;
+    left: 1675px;
+    top: 50px;
 
 }
 
@@ -648,7 +676,7 @@ button::after{
     .decal img {
         transform: scale(0.5) !important;
         position: absolute;
-        left: -48px !important;
+        left: -8px !important;
         top: -450px;
     }
     
@@ -796,8 +824,8 @@ button::after{
     .decal img {
         transform: scale(0.7);
         position: absolute;
-        left: 400px;
-        top: -450px;
+        left: 520px;
+        top: -440px;
     }
     
     .social_container {
@@ -942,10 +970,10 @@ button::after{
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     .decal img {
-        transform: scale(0.8);
+        transform: scale(0.7);
         position: absolute;
-        left: 800px;
-        top: -450px;
+        left: 840px;
+        top: -350px;
     }
     
     .social_container {
@@ -1079,10 +1107,10 @@ button::after{
 
 
     .decal img {
-        transform: scale(0.8);
+        transform: scale(0.7);
         position: absolute;
-        left: 1020px;
-        top: -420px;
+        left: 1180px;
+        top: -40px;
     }
     
     .social_container {
@@ -1214,8 +1242,8 @@ button::after{
 .decal img {
     transform: scale(0.9);
     position: absolute;
-    left: 1150px;
-    top: -420px;
+    left: 1400px;
+    top: 10px;
 }
 
 .social_container {

@@ -222,6 +222,10 @@ nav ul li a:hover {
 
 
 
+
+
+
+
 /* Headers */
 
 .header h1 {
@@ -312,6 +316,38 @@ nav ul li a:hover {
     padding-bottom: 50px;
 }
 
+
+
+/* Hyperlinks */
+
+.footer a:link {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer a:visited {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer a:hover {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer a:active {
+    color: #919191;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+
+
+
 /* Intro */
 
 .intro h2 {
@@ -365,14 +401,13 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 202px;
-    top: 460px;
+    left: 283px;
+    top: 540px;
     transition: .5s;
 }
 
 .python img:hover {
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -380,15 +415,14 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 442px;
-    top: 460px;
+    left: 518px;
+    top: 540px;
     transition: .5s;
 }
 
 .javascript img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -397,16 +431,15 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 682px;
-    top: 460px;
+    left: 753px;
+    top: 540px;
     transition: .5s;
 }
 
 
 .html img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -429,15 +462,14 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 202px;
-    top: 870px;
+    left: 283px;
+    top: 945px;
     transition: .5s;
 }
 
 .xd img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -445,16 +477,15 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 442px;
-    top: 870px;
+    left: 518px;
+    top: 945px;
     transition: .5s;
 
 }
 
 .illustrator img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -463,15 +494,14 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 682px;
-    top: 870px;
+    left: 753px;
+    top: 945px;
     transition: .5s;
 }
 
 .photoshop img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -479,15 +509,14 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 922px;
-    top: 870px;
+    left: 988px;
+    top: 945px;
     transition: .5s;
 }
 
 .premiere_pro img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -495,15 +524,14 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 202px;
-    top: 1120px;
+    left: 283px;
+    top: 1190px;
     transition: .5s;
 }
 
 .after_effects img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -511,16 +539,15 @@ nav ul li a:hover {
 
     display: flex;
     position: absolute;
-    left: 442px;
-    top: 1120px;
+    left: 518px;
+    top: 1190px;
     transition: .5s;
 
 }
 
 .fl_studio img:hover {
 
-    transform: scale(1.02);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -534,8 +561,8 @@ nav ul li a:hover {
 .decal img {
 
     position: absolute;
-    left: 1590px;
-    top: -350px;
+    left: 1690px;
+    top: 10px;
 
 }
 
@@ -564,9 +591,9 @@ nav ul li a:hover {
 .decal img {
 
     position: absolute;
-    left: -18px;
+    left: 20px;
     transform: scale(0.6);
-    top: -700px;
+    top: -400px;
    }
 
    .header h1 {
@@ -628,7 +655,7 @@ nav ul li a:hover {
 
     transform: scale(0.8);
     left: -22px;
-    top: -180px;
+    top: -86px;
    }
 
 
@@ -638,14 +665,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 88px;
-    top: 380px;
+    left: 164px;
+    top: 480px;
     transition: .9s;
    }
 
    .python img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -654,14 +680,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    top: 380px;
-    left: 256px;
+    top: 480px;
+    left: 334px;
     transition: .9s;
    }
 
    .javascript img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -670,14 +695,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    top: 380px;
-    left: 424px;
+    top: 480px;
+    left: 504px;
     transition: .9s;
    }
 
    .html img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -697,14 +721,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 88px;
-    top: 700px;
+    left: 164px;
+    top: 795px;
     transition: .9s;
    }
 
    .xd img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -712,14 +735,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 256px;
-    top: 700px;
+    left: 334px;
+    top: 795px;
     transition: .9s;
    }
 
    .illustrator img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -727,14 +749,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 424px;
-    top: 700px;
+    left: 504px;
+    top: 795px;
     transition: .9s;
    }
 
    .photoshop img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -742,14 +763,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 88px;
-    top: 874px;
+    left: 164px;
+    top: 970px;
     transition: .9s;
    }
 
    .premiere_pro img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -757,14 +777,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 256px;
-    top: 874px;
+    left: 334px;
+    top: 970px;
     transition: .9s;
    }
 
    .after_effects img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -772,27 +791,21 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 424px;
-    top: 874px;
+    left: 504px;
+    top: 970px;
     transition: .9s;
    }
 
    .fl_studio img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
-
 
 
     .footer {
     position: relative;
     top: -350px;
     }
-
-
-
-
 
 
 }
@@ -805,14 +818,15 @@ nav ul li a:hover {
 
         position: absolute;
         transform: scale(0.5);
-        top: -700px;
-        left: -35px;
+        top: -400px;
+        left: 0px;
     }
 
     .social_container {
 
-        transform: scale(0.7);
-        left: -25px;
+        transform: scale(0.8);
+        left: -38px;
+        top: -100px;
     }
 
     .underline {
@@ -857,43 +871,41 @@ nav ul li a:hover {
     .python img {
 
         position: absolute;
-        left: 50px;
+        left: 128px;
+        top: 470px;
         transition: .9s;
     }
 
     .python img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
     .javascript img {
 
         position: absolute;
-        left: 50px;
+        left: 128px;
         transition: .9s;
-        top: 560px;
+        top: 650px;
     }
 
     .javascript img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
     .html img {
 
         position: absolute;
-        left: 50px;
-        top: 740px;
+        left: 128px;
+        top: 830px;
     }
 
     .html img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
@@ -908,14 +920,13 @@ nav ul li a:hover {
     .xd img {
 
         position: absolute;
-        left: 50px;
-        top: 1020px;
+        left: 128px;
+        top: 1100px;
     }
 
     .xd img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
@@ -923,71 +934,66 @@ nav ul li a:hover {
 
 
         position: absolute;
-        left: 50px;
-        top: 1200px;
+        left: 128px;
+        top: 1280px;
     }
 
     .illustrator img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
     .photoshop img {
 
         position: absolute;
-        left: 50px;
-        top: 1380px;
+        left: 128px;
+        top: 1460px;
     }
 
     .photoshop img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
     .premiere_pro img {
 
         position: absolute;
-        left: 50px;
-        top: 1560px;
+        left: 128px;
+        top: 1640px;
         
     }
 
     .premiere_pro img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
     .after_effects img {
 
         position: absolute;
-        left: 50px;
-        top: 1740px;
+        left: 128px;
+        top: 1820px;
     }
 
     .after_effects img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
     .fl_studio img {
 
         position: absolute;
-        left: 50px;
-        top: 1920px;
+        left: 128px;
+        top: 2000px;
     }
 
     .fl_studio img:hover {
 
-        transform: scale(0.82);
-        opacity: .8;
+        opacity: .7;
         transition: .9s;
     }
 
@@ -1008,9 +1014,9 @@ nav ul li a:hover {
    .decal img {
 
     position: absolute;
-    left: 730px;
+    left: 840px;
     transform: scale(0.6);
-    top: -700px;
+    top: -190px;
    }
 
    .header h1 {
@@ -1069,25 +1075,21 @@ nav ul li a:hover {
 
    .social_container {
 
-    transform: scale(0.6);
-    left: 5px;
+    transform: scale(0.8);
+    left: -22px;
    }
-
-
-
 
    .python img {
 
     position: absolute;
     transform: scale(0.8);
-    left: 88px;
-    top: 380px;
+    left: 164px;
+    top: 480px;
     transition: .9s;
    }
 
    .python img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1096,14 +1098,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    top: 380px;
-    left: 256px;
+    top: 480px;
+    left: 332px;
     transition: .9s;
    }
 
    .javascript img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1112,14 +1113,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    top: 380px;
-    left: 424px;
+    top: 480px;
+    left: 500px;
     transition: .9s;
    }
 
    .html img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1139,14 +1139,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 88px;
-    top: 700px;
+    left: 164px;
+    top: 795px;
     transition: .9s;
    }
 
    .xd img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1154,14 +1153,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 256px;
-    top: 700px;
+    left: 332px;
+    top: 795px;
     transition: .9s;
    }
 
    .illustrator img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1169,14 +1167,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 424px;
-    top: 700px;
+    left: 500px;
+    top: 795px;
     transition: .9s;
    }
 
    .photoshop img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1184,14 +1181,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 592px;
-    top: 700px;
+    left: 668px;
+    top: 795px;
     transition: .9s;
    }
 
    .premiere_pro img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1199,14 +1195,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 88px;
-    top: 874px;
+    left: 164px;
+    top: 970px;
     transition: .9s;
    }
 
    .after_effects img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1214,14 +1209,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 256px;
-    top: 874px;
+    left: 332px;
+    top: 970px;
     transition: .9s;
    }
 
    .fl_studio img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1242,9 +1236,9 @@ nav ul li a:hover {
 .decal img {
 
     position: absolute;
-    left: 995px;
-    transform: scale(0.7);
-    top: -500px;
+    left: 1160px;
+    transform: scale(0.8);
+    top: -100px;
    }
 
    .header h1 {
@@ -1304,7 +1298,7 @@ nav ul li a:hover {
    .social_container {
 
     left: -42px;
-    top: -255px;
+    top: -210px;
    }
 
 
@@ -1312,14 +1306,14 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 100px;
-    top: 400px;
+    left: 176px;
+    top: 475px;
     transition: .9s;
    }
 
    .python img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1328,14 +1322,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    top: 400px;
-    left: 268px;
+    top: 475px;
+    left: 345px;
     transition: .9s;
    }
 
    .javascript img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1344,14 +1337,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    top: 400px;
-    left: 436px;
+    top: 475px;
+    left: 514px;
     transition: .9s;
    }
 
    .html img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1371,14 +1363,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 100px;
-    top: 720px;
+    left: 176px;
+    top: 795px;
     transition: .9s;
    }
 
    .xd img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1386,14 +1377,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 268px;
-    top: 720px;
+    left: 345px;
+    top: 795px;
     transition: .9s;
    }
 
    .illustrator img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1401,14 +1391,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 436px;
-    top: 720px;
+    left: 514px;
+    top: 795px;
     transition: .9s;
    }
 
    .photoshop img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1416,14 +1405,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 604px;
-    top: 720px;
+    left: 683px;
+    top: 795px;
     transition: .9s;
    }
 
    .premiere_pro img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1431,14 +1419,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 100px;
-    top: 894px;
+    left: 176px;
+    top: 970px;
     transition: .9s;
    }
 
    .after_effects img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1446,14 +1433,13 @@ nav ul li a:hover {
 
     position: absolute;
     transform: scale(0.8);
-    left: 268px;
-    top: 894px;
+    left: 345px;
+    top: 970px;
     transition: .9s;
    }
 
    .fl_studio img:hover {
-    transform: scale(0.85);
-    opacity: .8;
+    opacity: .7;
     transition: .9s;
 }
 
@@ -1473,7 +1459,7 @@ nav ul li a:hover {
     .decal {
 
         position: absolute;
-        left: -300px;
-        top: -100px;
+        left: -290px;
+        top: 0px;
     }
 }
