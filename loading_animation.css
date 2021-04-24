@@ -1,0 +1,131 @@
+html {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    font-size: 3vw;
+    font-weight: 100;
+    text-shadow: 0 0 5px red;
+    background-color: #0f0000;
+    background-image: url(http://api.thumbr.it/whitenoise-200x200.png?background=00000000&noise=626262&density=15&opacity=15);
+    background-size: 100px;
+    color: #ff6666;
+    height: 100%;
+    text-align: center;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    overflow: hidden;
+  }
+  .terminal {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-gap: 3vw;
+    padding: 3vw;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .glitch {
+    animation: glitch 1.5s linear infinite;
+  }
+  .glitch--clone {
+    opacity: 0.2;
+  }
+  .glitch--clone .hydra {
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+  .glitch--top {
+    animation: glitch--top 1s linear infinite;
+  }
+  .glitch--top .hydra {
+    transform: translate(4vw, 4vw);
+  }
+  .glitch--bottom {
+    animation: glitch--bottom 0.75s linear infinite;
+  }
+  .glitch--bottom .hydra {
+    transform: translate(-1vw, -1vw);
+  }
+  .hydra {
+    box-shadow: 0 0 2px red, inset 0 0 2px red;
+    padding: 2vw;
+    border: 0.2vw solid #ff6666;
+    grid-row: 2/2;
+    grid-column: 2/2;
+  }
+  .scanline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.03);
+    animation: scanline 6s linear infinite;
+  }
+  .loading-bar--unloaded {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+  }
+  .hidden {
+    display: none;
+  }
+  p {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    font-size: inherit;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .text--sm {
+    font-size: 1.75vw;
+  }
+  * + .text--sm {
+    padding-top: 0.5vw;
+  }
+  * + .loading-bar {
+    padding-top: 1vw;
+  }
+  @keyframes scanline {
+    0.01% {
+      transform: translatey(-100%);
+    }
+    99.99% {
+      transform: translatey(0);
+    }
+    100% {
+      transform: translatey(-100%);
+    }
+  }
+  @keyframes glitch {
+    2%, 64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+    4%, 60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
+  }
+  @keyframes glitch--top {
+    2%, 64% {
+      transform: translate(2px, -2px);
+    }
+    4%, 60% {
+      transform: translate(-2px, 2px);
+    }
+    62% {
+      transform: translate(13px, -1px) skew(-13deg);
+    }
+  }
+  @keyframes glitch--bottom {
+    2%, 64% {
+      transform: translate(-2px, 0);
+    }
+    4%, 60% {
+      transform: translate(-2px, 0);
+    }
+    62% {
+      transform: translate(-22px, 5px) skew(21deg);
+    }
+  }

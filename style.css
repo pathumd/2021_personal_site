@@ -347,6 +347,12 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+.nav-wrapper ul li:nth-child(1) a {
+
+  color: #020106;
+  font-weight: 200;
+}
+
 @media screen and (max-width: 864px) {
 
 
