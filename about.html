@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
     <title>Pathum Danthanarayana | Dev + Design</title>
     <link rel="stylesheet" href="about.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -109,17 +111,45 @@
 </div>
 
 </div>
-<!--Proficiencies Decal-->
 
-<div class="decal">
-    <img src="About Page/proficiencies_decal.svg" draggable="false">
-</div>
 
 <!--Footer-->
 
 <div class="footer">
     <h2>Pathum Danthanarayana 2021 | <a href="https://github.com/pathumd/2021_personal_site" target="_blank">View this project</a></h2>
 </div>
+
+
+<!--Progress Counter-->
+<div class="percent">
+    <div class="fill"></div>
+    <div class="counter"><h3></h3></div>
+</div>
+
+<script>
+
+    var counter = document.querySelector(".percent");
+
+    function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $("h3")
+            .text(Math.round(progress) + "%")
+            .css({ color: $textColor });
+
+        $(".fill")
+            .height(progress + "%")
+            .css({ backgroundColor: $bgColor });
+    }
+    progress();
+    $(document).on("scroll", progress);
+</script>
 
 </body>
 </html>

@@ -31,6 +31,29 @@ html {
 }
 
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #00F0FF;
+    border-radius: 20px;
+}
+
+/* Text selection */
+
+::selection {
+    background: #FD3649; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #FD3649; /* Gecko Browsers */
+  } 
+  
+
 body {
 
     font-family: Blender Pro;
@@ -227,6 +250,39 @@ nav ul li a:hover {
 }
 
 
+  /* Progress Counter */
+
+  h3 {
+    position: absolute;
+    font-family: 'Blender Pro';
+    font-size: 16px;
+    font-weight: lighter;
+    color: white !important;
+    margin: 20px;
+}
+
+.percent {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    height: 140px;
+    width: 1px;
+}
+
+
+.fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: background 0.15s ease;
+}
+
 
 /* Hyperlinks */
 
@@ -279,15 +335,6 @@ nav ul li a:hover {
 
 }
 
-/*Decal */
-
-.decal img {
-
-    position: absolute;
-    left: 1675px;
-    top: 50px;
-
-}
 
 /*Social Media Icons */
 
@@ -526,165 +573,45 @@ nav ul li a:hover {
     top: 1045px;
 }
 
-/*Back to Top */
 
-.conclusion h1 {
-
-    font-weight: 200;
-    text-transform: uppercase;
-    color: #FCEE09;
-    font-size: 70px;
-    position: absolute;
-    left: 280px;
-    top: 6700px;
-}
-
-.conclusion h2 {
-
-    font-weight: 100;
-    color: white;
-    font-size: 22px;
-    position: absolute;
-    left: 280px;
-    top: 6815px;
-}
-
-.button_container {
+.project9 img {
 
     position: relative;
-    left: 280px;
-    top: 1555px;
-    
+    opacity: .5;
+    top: 1150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+    cursor: pointer;
 }
 
-button,button::after{
-    width: 190px;
-    height:64px;
-    font-size: 19px;
-    text-align: center;
-    margin: auto;
-    font-family: Blender Pro;
-    font-weight:100;
-    background:linear-gradient(45deg,transparent 5%,#FD3649 5%);
-    border:0;
-    color:#fff;
-    letter-spacing:3px;
-    box-shadow:6px 0 0 #00E6F6;
-    position:relative;
-    cursor: pointer;
-    behavior: smooth;
-  
-  }
-   
-button::after{
-     --slice-0:inset(50% 50% 50% 50%);
-    --slice-1:inset(80% -6px 0 0);
-    --slice-2:inset(50% -6px 30% 0);
-    --slice-3:inset(10% -6px 85% 0);
-    --slice-4:inset(40% -6px 43% 0);
-    --slice-5:inset(80% -6px 5% 0);
-    content:'RESUME_';
-    display:block;
-    position:absolute;
-    left:0;
-    top:0;
-    background:linear-gradient(45deg,transparent 3%,#00E6F6 3%,#00E6F6 5%,#FD3649 3%);
-    text-shadow: -3px -3px 0 #F8F005 , 3px 3px 0 #00E6F6;
-    clip-path:var(--slice-0);
-  }
-  button:hover::after{
-    animation: glitch 1s;
-    animation-timing-function:steps(2,end);
-  }
-  
-  @keyframes glitch {
-    0% {
-      clip-path: var(--slice-1);
-      transform: translate(-20px, -10px);
-    }
-    
-    10% {
-      clip-path: var(--slice-3);
-      transform: translate(10px, 10px);
-    }
-    
-    20% {
-      clip-path: var(--slice-1);
-      transform: translate(-10px, 10px);
-    }
-    
-    30% {
-      clip-path: var(--slice-3);
-      transform: translate(0px, 5px);
-    }
-    
-    40% {
-      clip-path: var(--slice-2);
-      transform: translate(-5px, 0px);
-    }
-    
-    50% {
-      clip-path: var(--slice-3);
-      transform: translate(5px, 0px);
-    }
-    
-    60% {
-      clip-path: var(--slice-4);
-      transform: translate(5px, 10px);
-    }
-    
-    70% {
-      clip-path: var(--slice-2);
-      transform: translate(-10px, 10px);
-    }
-    
-    80% {
-      clip-path: var(--slice-5);
-      transform: translate(20px, -10px);
-    }
-    
-    90% {
-      clip-path: var(--slice-1);
-      transform: translate(-10px, 0px);
-    }
-    
-    100% {
-      clip-path: var(--slice-1);
-      transform: translate(0);
-    }
-  }
+.project9 img:hover {
+
+    transition: .5s;
+    opacity: 1;
+    top: 1145px;
+}
 
 
 /*Footer */
-
 
 .footer h2 {
     position: relative;
     text-align: center;
     color: #919191;
-    top: 50px;
     font-weight: 100;
     font-size: 15px;
     top: 1850px;
     padding-bottom: 50px;
+    top: 1350px;
 }
-
-
-
-
-
 
 
 /*Optimization*/
 
 @media only screen and (max-width: 480px) {
 
-    .decal img {
-        transform: scale(0.5) !important;
-        position: absolute;
-        left: -8px !important;
-        top: -450px;
-    }
     
     .social_container {
     
@@ -793,28 +720,19 @@ button::after{
     
         top: 335px;
     }
+
+    .project9 img {
     
-    .conclusion h1 {
-        position: absolute;
-        top: 2300px !important;
-        left: 110px !important;
-        font-size: 30px !important;
+        transform: scale(0.8);
+        top: 340px;
     }
     
-    .conclusion h2 {
-        position: absolute;
-        top: 2365px !important;
-        left: 112px !important;
-        font-size: 16px !important;
+    .project9 img:hover {
+    
+        top: 335px;
     }
     
-    .button_container {
-        position: absolute;
-        top: 2410px !important;
-        transform: scale(0.7) !important;
-        left: 84px !important;
-        top: 2416px !important;
-    }
+
     
     .footer {
         position: relative;
@@ -826,13 +744,6 @@ button::after{
 
 @media only screen and (min-width: 360px) and (max-width: 765px) {
 
-    
-    .decal img {
-        transform: scale(0.7);
-        position: absolute;
-        left: 520px;
-        top: -440px;
-    }
     
     .social_container {
     
@@ -940,28 +851,19 @@ button::after{
     
         top: 335px;
     }
+
+
+    .project9 img {
     
-    .conclusion h1 {
-        position: absolute;
-        top: 3280px;
-        left: 180px;
-        font-size: 45px;
-    }
-    
-    .conclusion h2 {
-        position: absolute;
-        top: 3360px;
-        left: 180px;
-        font-size: 20px;
-    }
-    
-    .button_container {
-        position: absolute;
-        top: 670px;
         transform: scale(0.8);
-        left: 162px;
-        top: 3422px;
+        top: 340px;
     }
+    
+    .project9 img:hover {
+    
+        top: 335px;
+    }
+    
     
     .footer {
         position: relative;
@@ -975,13 +877,7 @@ button::after{
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .decal img {
-        transform: scale(0.7);
-        position: absolute;
-        left: 840px;
-        top: -350px;
-    }
-    
+
     .social_container {
     
         transform: scale(0.8);
@@ -1080,25 +976,18 @@ button::after{
     
         top: 335px;
     }
+
+    .project9 img {
     
-    .conclusion h1 {
-        position: absolute;
-        top: 4740px;
-        font-size: 45px;
-    }
-    
-    .conclusion h2 {
-        position: absolute;
-        top: 4825px;
-        font-size: 20px;
-    }
-    
-    .button_container {
-        position: absolute;
-        top: 4890px;
         transform: scale(0.8);
-        left: 260px;
+        top: 340px;
     }
+    
+    .project9 img:hover {
+    
+        top: 335px;
+    }
+    
     
     .footer {
         position: relative;
@@ -1111,13 +1000,6 @@ button::after{
 
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
 
-
-    .decal img {
-        transform: scale(0.7);
-        position: absolute;
-        left: 1180px;
-        top: -40px;
-    }
     
     .social_container {
     
@@ -1216,24 +1098,16 @@ button::after{
     
         top: 335px;
     }
+
+    .project9 img {
     
-    .conclusion h1 {
-        position: absolute;
-        top: 5785px;
-        font-size: 55px;
+        transform: scale(0.8);
+        top: 340px;
     }
     
-    .conclusion h2 {
-        position: absolute;
-        top: 5890px;
-        font-size: 20px;
-    }
+    .project9 img:hover {
     
-    .button_container {
-        position: absolute;
-        top: 5970px;
-        transform: scale(0.9);
-        left: 272px;
+        top: 335px;
     }
     
     .footer {
@@ -1241,16 +1115,16 @@ button::after{
         top: -800px;
     }
 
+    .footer h2 {
+
+        top: 1300px;
+    }
+
+
 }
 
 @media only screen and (min-width: 1370px) and (max-width: 1630px) {
 
-.decal img {
-    transform: scale(0.9);
-    position: absolute;
-    left: 1400px;
-    top: 10px;
-}
 
 .social_container {
 
@@ -1351,31 +1225,26 @@ button::after{
     top: 335px;
 }
 
-.conclusion h1 {
+.project9 img {
 
-    position: absolute;
-    top: 5850px;
-    font-size: 55px;
+    transform: scale(0.8);
+    top: 340px;
 }
 
-.conclusion h2 {
+.project9 img:hover {
 
-    position: absolute;
-    top: 5950px;
-    font-size: 20px;
+    top: 335px;
 }
 
-.button_container {
-
-    position: absolute;
-    top: 6030px;
-    transform: scale(0.9);
-    left: 270px;
-}
 
 .footer {
     position: relative;
     top: -800px;
+}
+
+.footer h2 {
+
+    top: 1300px;
 }
 
 }

@@ -43,6 +43,27 @@ body {
 }
 
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #FD3649;
+  border-radius: 20px;
+}
+
+/* Text selection */
+
+::selection {
+  background: #00F0FF; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #00F0FF; /* Gecko Browsers */
+}
 
 
 /* Hyperlinks */
@@ -803,8 +824,6 @@ nav ul li a:hover {
 
 
 
-
-
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
 
 
@@ -812,7 +831,7 @@ nav ul li a:hover {
 
         position: absolute;
         left: 25px;
-        top: -55px;
+        top: -85px;
         transform: scale(0.8);
     }
 
@@ -824,17 +843,18 @@ nav ul li a:hover {
     .text_header {
 
         left: 185px;
-        top: 340px;
+        top: 310px;
     }
 
 
     .tagline h2 {
 
-        font-size: 20px;
+        font-size: 22px;
     }
+
     .tagline {
         position: relative;
-        top: -170px;
+        top: -200px;
         left: -95px;
     }
 
@@ -842,29 +862,10 @@ nav ul li a:hover {
 
         position: absolute;
         left: 110px;
-        top: 525px;
+        top: 495px;
         padding-left: 80px;
     
     }
-
-    button,button::after{
-        width: 145px;
-        height:50px;
-        font-size: 16px;
-        line-height: 48px;
-        text-align: center;
-        margin: auto;
-        font-family: Blender Pro;
-        font-weight:100;
-        background:linear-gradient(45deg,transparent 5%,#FD3649 5%);
-        border:0;
-        color:#fff;
-        letter-spacing:3px;
-        box-shadow:6px 0 0 #00E6F6;
-        position:relative;
-      
-      }
-
 
 
     .social_container {
@@ -875,67 +876,15 @@ nav ul li a:hover {
     }
 
 
-    @keyframes glitch {
-        0% {
-          clip-path: var(--slice-1);
-          transform: translate(-20px, -60px);
-        }
-        
-        10% {
-          clip-path: var(--slice-3);
-          transform: translate(10px, -30px);
-        }
-        
-        20% {
-          clip-path: var(--slice-1);
-          transform: translate(-10px, -45px);
-        }
-        
-        30% {
-          clip-path: var(--slice-3);
-          transform: translate(0px, -35px);
-        }
-        
-        40% {
-          clip-path: var(--slice-2);
-          transform: translate(-5px, -38px);
-        }
-        
-        50% {
-          clip-path: var(--slice-3);
-          transform: translate(5px, -45px);
-        }
-        
-        60% {
-          clip-path: var(--slice-4);
-          transform: translate(5px, -40px);
-        }
-        
-        70% {
-          clip-path: var(--slice-2);
-          transform: translate(-10px, -60px);
-        }
-        
-        80% {
-          clip-path: var(--slice-5);
-          transform: translate(20px, -50px);
-        }
-        
-        90% {
-          clip-path: var(--slice-1);
-          transform: translate(-10px, -35px);
-        }
-        
-        100% {
-          clip-path: var(--slice-1);
-          transform: translate(0);
-        }
-    }
-
     .footer {
 
       position: relative;
       top: 10px;
+    }
+
+    .footer h2 {
+
+      top: 830px;
     }
 
 
