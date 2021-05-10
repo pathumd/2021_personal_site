@@ -467,8 +467,8 @@ h3 {
 }
 
 .python img:hover {
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -483,8 +483,8 @@ h3 {
 
 .javascript img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -501,8 +501,8 @@ h3 {
 
 .html img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -532,8 +532,8 @@ h3 {
 
 .xd img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -549,8 +549,8 @@ h3 {
 
 .illustrator img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -566,8 +566,8 @@ h3 {
 
 .photoshop img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -582,8 +582,8 @@ h3 {
 
 .premiere_pro img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -598,8 +598,8 @@ h3 {
 
 .after_effects img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -615,8 +615,8 @@ h3 {
 
 .fl_studio img:hover {
 
-    opacity: .7;
-    transition: .9s;
+    filter: drop-shadow(0px 0px 10px #00F0FF);
+    transition: .5s;
     cursor: pointer;
 }
 
@@ -1135,12 +1135,12 @@ h3 {
     transform: scale(0.8);
     left: 164px;
     top: 480px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .python img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
 
@@ -1150,12 +1150,12 @@ h3 {
     transform: scale(0.8);
     top: 480px;
     left: 332px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .javascript img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
 
@@ -1165,12 +1165,12 @@ h3 {
     transform: scale(0.8);
     top: 480px;
     left: 500px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .html img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
    .software h2 {
@@ -1191,12 +1191,12 @@ h3 {
     transform: scale(0.8);
     left: 164px;
     top: 795px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .xd img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
    .illustrator img {
@@ -1205,12 +1205,12 @@ h3 {
     transform: scale(0.8);
     left: 332px;
     top: 795px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .illustrator img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
    .photoshop img {
@@ -1219,12 +1219,12 @@ h3 {
     transform: scale(0.8);
     left: 500px;
     top: 795px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .photoshop img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
    .premiere_pro img {
@@ -1233,12 +1233,12 @@ h3 {
     transform: scale(0.8);
     left: 668px;
     top: 795px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .premiere_pro img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
    .after_effects img {
@@ -1247,12 +1247,12 @@ h3 {
     transform: scale(0.8);
     left: 164px;
     top: 970px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .after_effects img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
    .fl_studio img {
@@ -1261,12 +1261,12 @@ h3 {
     transform: scale(0.8);
     left: 332px;
     top: 970px;
-    transition: .9s;
+    transition: .3s;
    }
 
    .fl_studio img:hover {
     opacity: .7;
-    transition: .9s;
+    transition: .3s;
 }
 
 

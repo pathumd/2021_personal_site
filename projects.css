@@ -155,7 +155,8 @@ nav ul li a:hover {
     }
 
     .nav-wrapper ul li:nth-child(3) a {
-          transition-delay: 0.4s;
+        color: #020106;
+        transition-delay: 0.4s;
     }
 
     .nav-wrapper ul li:nth-child(4) a {
@@ -414,17 +415,19 @@ nav ul li a:hover {
 .project1 img {
     position: relative;
     opacity: 0.5;
+    filter: blur(3px);
     top: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .project1 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 345px;
 }
@@ -434,18 +437,20 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 450px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 
 }
 
 .project2 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     animation-timing-function: linear;
     opacity: 1;
     top: 445px;
@@ -456,18 +461,20 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 550px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 
 }
 
 .project3 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 545px;
 }
@@ -476,18 +483,20 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 650px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 
 }
 
 .project4 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 645px;
 }
@@ -497,18 +506,20 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 750px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
 
 .project5 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 745px;
 }
@@ -518,17 +529,19 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 850px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .project6 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 845px;
 }
@@ -538,17 +551,19 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 950px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .project7 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 945px;
 }
@@ -558,17 +573,19 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 1050px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .project8 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 1045px;
 }
@@ -578,17 +595,19 @@ nav ul li a:hover {
 
     position: relative;
     opacity: .5;
+    filter: blur(3px);
     top: 1150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .project9 img:hover {
 
-    transition: .5s;
+    transition: .3s;
+    filter: blur(0px);
     opacity: 1;
     top: 1145px;
 }
