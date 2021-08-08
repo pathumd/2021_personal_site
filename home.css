@@ -40,11 +40,7 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
-  background-image: url("Home Page/loop.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  color: #fcee09;
 }
 
 
