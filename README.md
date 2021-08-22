@@ -1,3 +1,4 @@
+![website_3](https://user-images.githubusercontent.com/61627702/130358598-09661c97-8ccc-4555-ab0c-2959978a4883.jpg)
 # Personal Website
 
 This multi-page personal website is used to provide more info about me, as well as to showcase the projects I've been working on in a creative way.
